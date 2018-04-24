@@ -1,19 +1,51 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script src="index.js"></script>
-		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<div>
-			<!-- search bar -->
-		<input id="searchInput" oninput="searchInputChange()" type="text">
-		<button id="searchBtn" onclick="search()">search</button>
-		<button id="clearBtn" onclick="clearInput()">clear</button>
-		</div>
-		<div>
-			<!-- content -->
-		</div>
-	</body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="index.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-header container">
+    <h1>zhudahe quick use</h1>
+</div>
+
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">搜索吧</div>
+        <div class="panel-body">
+            <div class="">
+                <!-- search bar -->
+                <input id="searchInput" class="form-control" oninput="searchInputChange()" type="text"><br>
+                <div class="text-center">
+                    <button id="searchBtn" class="btn btn-success" onclick="search()">search</button>
+                    <button id="clearBtn" class="btn btn-primary" onclick="clearInput()">clear</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="panel panel-success">
+        <div class="panel-heading">分类A</div>
+        <div class="panel-body">
+            <div class="list-group">
+                <a href="#" class="list-group-item"> Cras justo</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <a href="#" class="list-group-item">
+                    <h5 class="list-group-item-heading">List group item heading</h5>
+                    <p class="list-group-item-text">这是简介</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
